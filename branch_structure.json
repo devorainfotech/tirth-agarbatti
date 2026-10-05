@@ -1,0 +1,24 @@
+{
+  "default_branch": "main",
+  "branches": [
+    "kashyap",
+    "main",
+    "origin",
+    "priyanshi",
+    "yash"
+  ],
+  "parent": {
+    "kashyap": "main",
+    "main": null,
+    "origin": "main",
+    "priyanshi": "main",
+    "yash": "main"
+  },
+  "order": [
+    "main",
+    "kashyap",
+    "origin",
+    "priyanshi",
+    "yash"
+  ]
+}
