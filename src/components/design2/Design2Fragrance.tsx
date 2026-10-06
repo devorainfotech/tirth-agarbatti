@@ -2,7 +2,11 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+<<<<<<< HEAD
 import { Sparkles, Flame } from "lucide-react";
+=======
+import { Sparkles } from "lucide-react";
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
 import ScrollReveal from "./ScrollReveal";
 
 const FRAGRANCE_ART = [
@@ -34,6 +38,7 @@ const FRAGRANCE_ART = [
 
 export default function Design2Fragrance() {
   return (
+<<<<<<< HEAD
     <section className="py-20 sm:py-28 bg-[#FFFDF8] text-[#1C140E] relative border-b border-[#C8A45D]/25 overflow-hidden">
       
       {/* Background Subtle Radial Glow & Accents */}
@@ -42,11 +47,18 @@ export default function Design2Fragrance() {
       {/* Decorative Corner Watermarks */}
       <div className="absolute top-8 left-8 w-16 h-16 border-t border-l border-[#C8A45D]/20 pointer-events-none hidden md:block" />
       <div className="absolute bottom-8 right-8 w-16 h-16 border-b border-r border-[#C8A45D]/20 pointer-events-none hidden md:block" />
+=======
+    <section className="py-20 sm:py-28 bg-[#FFFDF8] text-[#241914] relative border-b border-[#B89042]/20 overflow-hidden">
+      
+      {/* Background Subtle Radial Glow */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#B89042]/8 rounded-full blur-3xl pointer-events-none" />
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Heading */}
         <ScrollReveal direction="up" distance={20}>
+<<<<<<< HEAD
           <div className="text-center max-w-2xl mx-auto mb-12 sm:mb-16 space-y-3">
             <div className="flex items-center justify-center gap-3">
               <span className="w-8 h-[1px] bg-[#C8A45D]" />
@@ -67,10 +79,24 @@ export default function Design2Fragrance() {
               <div className="w-16 h-[1px] bg-gradient-to-r from-transparent via-[#C8A45D] to-transparent" />
               <Sparkles className="w-4 h-4 text-[#C8A45D]" />
               <div className="w-16 h-[1px] bg-gradient-to-r from-transparent via-[#C8A45D] to-transparent" />
+=======
+          <div className="text-center max-w-2xl mx-auto mb-14 sm:mb-18 space-y-3">
+            <span className="text-xs font-semibold tracking-[0.3em] uppercase text-[#A95736] block">
+              OLFACTORY CRAFTSMANSHIP
+            </span>
+            <h2 className="font-serif text-3xl sm:text-5xl font-normal text-[#241914] leading-tight">
+              THE ART OF <span className="italic text-[#B89042]">FRAGRANCE</span>
+            </h2>
+            <div className="flex items-center justify-center gap-3 mt-4">
+              <div className="w-16 h-[2px] bg-gradient-to-r from-transparent via-[#B89042] to-transparent" />
+              <Sparkles className="w-4 h-4 text-[#B89042]" />
+              <div className="w-16 h-[2px] bg-gradient-to-r from-transparent via-[#B89042] to-transparent" />
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
             </div>
           </div>
         </ScrollReveal>
 
+<<<<<<< HEAD
         {/* 3 Compact Editorial Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
           {FRAGRANCE_ART.map((item, idx) => (
@@ -98,11 +124,32 @@ export default function Design2Fragrance() {
 
                   {/* Compact Image Container (Sleek Aspect 16/10) */}
                   <div className="relative aspect-[16/10] w-full overflow-hidden bg-[#1C140E] border border-[#C8A45D]/30 mb-4 group-hover:border-[#C8A45D]/60 transition-colors duration-400">
+=======
+        {/* 3 Fragrance Cards Spread */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-10">
+          {FRAGRANCE_ART.map((item, idx) => (
+            <ScrollReveal key={item.num} direction="up" distance={25} delay={idx * 0.15}>
+              <motion.div
+                whileHover={{ y: -6 }}
+                transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
+                className="group bg-[#FFFDF8] border-2 border-[#B89042]/30 p-5 sm:p-6 relative shadow-lg hover:shadow-2xl hover:border-[#A95736] transition-all duration-300 flex flex-col justify-between h-full rounded-xs"
+              >
+                <div>
+                  {/* Category & Num Header */}
+                  <div className="flex items-center justify-between text-[10px] font-semibold tracking-[0.25em] uppercase text-[#A95736] mb-4 pb-2 border-b border-[#B89042]/20">
+                    <span>{item.category}</span>
+                    <span className="font-mono text-[#B89042] font-bold text-xs">{item.num}</span>
+                  </div>
+
+                  {/* Image Container with Hover Zoom */}
+                  <div className="relative aspect-[3/4] w-full overflow-hidden bg-[#F7F1E6] border border-[#B89042]/40 rounded-xs mb-5">
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
                     <Image
                       src={item.image}
                       alt={item.title}
                       fill
                       sizes="(max-width: 768px) 100vw, 33vw"
+<<<<<<< HEAD
                       className="object-cover object-center transition-all duration-1000 ease-out group-hover:scale-108 group-hover:brightness-[1.03]"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#1C140E]/60 via-transparent to-transparent opacity-40 group-hover:opacity-20 transition-opacity duration-300" />
@@ -117,15 +164,37 @@ export default function Design2Fragrance() {
                       {item.title}
                     </h3>
                     <p className="text-xs text-[#1C140E]/80 leading-relaxed font-sans pt-1">
+=======
+                      className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#241914]/60 via-transparent to-transparent opacity-40 group-hover:opacity-20 transition-opacity duration-300" />
+                  </div>
+
+                  {/* Text Details */}
+                  <div className="space-y-2">
+                    <span className="text-[10px] font-semibold tracking-[0.2em] uppercase text-[#B89042] block">
+                      {item.subtitle}
+                    </span>
+                    <h3 className="font-serif text-2xl font-bold text-[#241914] tracking-wide leading-tight group-hover:text-[#A95736] transition-colors">
+                      {item.title}
+                    </h3>
+                    <p className="text-xs sm:text-sm text-[#241914]/85 leading-relaxed font-sans mt-1">
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
                       {item.desc}
                     </p>
                   </div>
                 </div>
 
                 {/* Card Footer Accent */}
+<<<<<<< HEAD
                 <div className="pt-3 mt-4 border-t border-[#C8A45D]/20 flex items-center justify-between text-xs text-[#1C140E]/70 font-sans">
                   <span className="font-serif italic text-[11px] text-[#8C5D3B]">Artisanal Botanical Accord</span>
                   <div className="w-1.5 h-1.5 rotate-45 bg-[#C8A45D] group-hover:bg-[#8C5D3B] transition-colors" />
+=======
+                <div className="pt-4 mt-5 border-t border-[#B89042]/20 flex items-center justify-between text-xs text-[#241914]/70">
+                  <span className="font-serif italic text-[11px]">Handcrafted Extract</span>
+                  <div className="w-2 h-2 rounded-full bg-[#B89042] group-hover:bg-[#A95736] transition-colors" />
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
                 </div>
 
               </motion.div>
@@ -137,4 +206,7 @@ export default function Design2Fragrance() {
     </section>
   );
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef

@@ -4,38 +4,62 @@ import Image from "next/image";
 import Link from "next/link";
 import { Sparkles, ArrowRight, Flower2, Flame, Feather, Component } from "lucide-react";
 import { motion } from "framer-motion";
+<<<<<<< HEAD
+=======
+import { BRAND_INFO } from "@/data/navigation";
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
 import ScrollReveal from "./ScrollReveal";
 
 const INGREDIENTS = [
   {
+<<<<<<< HEAD
     step: "01",
     name: "Pure Chandan Wood",
     detail: "Harvested Mysore Sandalwood",
     label: "Sandalwood Accord",
+=======
+    name: "Pure Chandan Wood",
+    detail: "Harvested Mysore Sandalwood",
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
     icon: Component,
     image: "/images/design2/fragrance-chandan-sandalwood.jpg",
   },
   {
+<<<<<<< HEAD
     step: "02",
     name: "Fresh Jasmine Petals",
     detail: "Morning Temple Mogra Bloom",
     label: "Floral Extraction",
+=======
+    name: "Fresh Jasmine Petals",
+    detail: "Morning Temple Mogra Bloom",
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
     icon: Flower2,
     image: "/images/design2/fragrance-mogra-jasmine.jpg",
   },
   {
+<<<<<<< HEAD
     step: "03",
     name: "Sacred Vedic Herbs",
     detail: "Organic Resin & Botanical Oils",
     label: "Resin Formulation",
+=======
+    name: "Sacred Vedic Herbs",
+    detail: "Organic Resin & Botanical Oils",
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
     icon: Feather,
     image: "/images/design2/brand-craftsmanship.jpg",
   },
   {
+<<<<<<< HEAD
     step: "04",
     name: "Purifying Smoke",
     detail: "Hand-Rolled Incense Ritual",
     label: "Atmospheric Offering",
+=======
+    name: "Purifying Smoke",
+    detail: "Hand-Rolled Incense Ritual",
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
     icon: Flame,
     image: "/images/design2/devotional-sanctum.jpg",
   },
@@ -43,6 +67,7 @@ const INGREDIENTS = [
 
 export default function Design2Devotion() {
   return (
+<<<<<<< HEAD
     <section className="py-24 sm:py-32 bg-[#FAF6EE] text-[#1C140E] relative overflow-hidden border-b border-[#C8A45D]/25">
       
       {/* Soft Atmosphere Glow & Lighting */}
@@ -52,10 +77,17 @@ export default function Design2Devotion() {
       {/* Decorative Corner Watermarks */}
       <div className="absolute top-10 left-8 w-16 h-16 border-t border-l border-[#C8A45D]/20 pointer-events-none hidden md:block" />
       <div className="absolute bottom-10 right-8 w-16 h-16 border-b border-r border-[#C8A45D]/20 pointer-events-none hidden md:block" />
+=======
+    <section className="py-20 sm:py-28 bg-[#F7F1E6] text-[#241914] relative border-b border-[#B89042]/20 overflow-hidden">
+      
+      {/* Soft Lighting Overlay */}
+      <div className="absolute -top-32 right-0 w-96 h-96 bg-[#B89042]/10 rounded-full blur-3xl pointer-events-none" />
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Header Composition */}
+<<<<<<< HEAD
         <ScrollReveal direction="up" distance={25}>
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-14 sm:mb-18 pb-6 border-b border-[#C8A45D]/30 gap-6">
             <div className="space-y-2">
@@ -82,10 +114,31 @@ export default function Design2Devotion() {
         </ScrollReveal>
 
         {/* 4-Column Ingredient & Process Grid */}
+=======
+        <ScrollReveal direction="up" distance={20}>
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-14 sm:mb-18 pb-6 border-b border-[#B89042]/30 gap-6">
+            <div className="space-y-2">
+              <span className="text-xs font-semibold tracking-[0.3em] uppercase text-[#A95736] block">
+                BOTANICAL ESSENCE TO SACRED SMOKE
+              </span>
+              <h2 className="font-serif text-3xl sm:text-5xl font-normal text-[#241914] leading-tight">
+                FROM NATURE <span className="italic text-[#B89042]">INTO DEVOTION</span>
+              </h2>
+            </div>
+            
+            <p className="max-w-md text-xs sm:text-sm text-[#241914]/85 leading-relaxed font-serif italic border-l-2 border-[#B89042] pl-4">
+              &ldquo;In Indian tradition, fragrance is an offering of pure consciousness—transforming raw floral extracts into sacred atmospheric devotion.&rdquo;
+            </p>
+          </div>
+        </ScrollReveal>
+
+        {/* 4-Column Ingredient & Atmosphere Grid */}
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {INGREDIENTS.map((item, index) => {
             const Icon = item.icon;
             return (
+<<<<<<< HEAD
               <ScrollReveal key={item.name} direction="up" distance={25} delay={index * 0.12}>
                 <motion.div
                   whileHover={{ y: -6 }}
@@ -107,11 +160,23 @@ export default function Design2Devotion() {
 
                     {/* Image Container */}
                     <div className="relative aspect-[4/3] w-full overflow-hidden bg-[#1C140E] border border-[#C8A45D]/30 mb-4 group-hover:border-[#C8A45D]/60 transition-colors duration-400">
+=======
+              <ScrollReveal key={item.name} direction="up" distance={20} delay={index * 0.12}>
+                <motion.div
+                  whileHover={{ y: -5 }}
+                  transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
+                  className="group bg-[#FFFDF8] border-2 border-[#B89042]/30 p-4 sm:p-5 relative shadow-lg hover:border-[#A95736] transition-all duration-300 rounded-xs flex flex-col justify-between h-full"
+                >
+                  <div>
+                    {/* Image Container */}
+                    <div className="relative aspect-[4/3] w-full overflow-hidden bg-[#241914] border border-[#B89042]/20 mb-4 rounded-xs">
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
                       <Image
                         src={item.image}
                         alt={item.name}
                         fill
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+<<<<<<< HEAD
                         className="object-cover object-center transition-all duration-1000 ease-out group-hover:scale-108 group-hover:brightness-[1.03]"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-[#1C140E]/80 via-[#1C140E]/20 to-transparent opacity-80 group-hover:opacity-50 transition-opacity duration-300" />
@@ -129,15 +194,38 @@ export default function Design2Devotion() {
                         {item.name}
                       </h3>
                       <p className="text-xs text-[#1C140E]/80 font-sans leading-relaxed">
+=======
+                        className="object-cover object-center transition-transform duration-700 group-hover:scale-105 opacity-90 group-hover:opacity-100"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#241914]/70 via-transparent to-transparent" />
+                      
+                      <div className="absolute bottom-3 left-3 flex items-center gap-1.5 text-[#FFFDF8] bg-[#241914]/80 px-2.5 py-1 text-[9px] font-semibold tracking-widest uppercase border border-[#B89042]/30 backdrop-blur-xs">
+                        <Icon className="w-3 h-3 text-[#D9A52B]" />
+                        <span>0{index + 1}</span>
+                      </div>
+                    </div>
+
+                    <div className="space-y-1">
+                      <h3 className="font-serif text-lg font-bold text-[#241914] group-hover:text-[#A95736] transition-colors leading-tight">
+                        {item.name}
+                      </h3>
+                      <p className="text-xs text-[#241914]/75 font-sans">
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
                         {item.detail}
                       </p>
                     </div>
                   </div>
 
+<<<<<<< HEAD
                   {/* Card Footer Accent */}
                   <div className="pt-3 mt-4 border-t border-[#C8A45D]/20 flex items-center justify-between text-[10px] uppercase font-sans font-semibold text-[#8C5D3B] tracking-wider">
                     <span>Ethically Sourced</span>
                     <Sparkles className="w-3 h-3 text-[#C8A45D]" />
+=======
+                  <div className="pt-3 mt-4 border-t border-[#B89042]/20 flex items-center justify-between text-[10px] uppercase font-semibold text-[#B89042]">
+                    <span>Ethically Sourced</span>
+                    <Sparkles className="w-3 h-3 text-[#A95736]" />
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
                   </div>
                 </motion.div>
               </ScrollReveal>
@@ -146,6 +234,7 @@ export default function Design2Devotion() {
         </div>
 
         {/* Bottom CTA */}
+<<<<<<< HEAD
         <ScrollReveal direction="up" distance={20} delay={0.4}>
           <div className="mt-14 text-center">
             <Link
@@ -157,6 +246,16 @@ export default function Design2Devotion() {
               
               <span className="relative z-10">EXPLORE DEVOTIONAL ARCHIVES</span>
               <ArrowRight className="w-4 h-4 text-[#C8A45D] relative z-10 transition-transform duration-300 group-hover:translate-x-1.5" />
+=======
+        <ScrollReveal direction="up" distance={15} delay={0.4}>
+          <div className="mt-12 text-center">
+            <Link
+              href="/design-2/gallery"
+              className="inline-flex items-center gap-3 px-8 py-3.5 bg-[#241914] text-[#FFFDF8] text-xs font-semibold tracking-[0.2em] uppercase hover:bg-[#A95736] transition-all duration-300 shadow-md border border-[#B89042]/40"
+            >
+              <span>EXPLORE DEVOTIONAL ARCHIVES</span>
+              <ArrowRight className="w-4 h-4 text-[#D9A52B]" />
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
             </Link>
           </div>
         </ScrollReveal>
@@ -165,4 +264,7 @@ export default function Design2Devotion() {
     </section>
   );
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
