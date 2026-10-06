@@ -15,8 +15,13 @@ export default function Design2Hero() {
     if (shouldReduceMotion) return;
     const handleMouseMove = (e: MouseEvent) => {
       const { innerWidth, innerHeight } = window;
+<<<<<<< HEAD
       const x = ((e.clientX / innerWidth) - 0.5) * 12;
       const y = ((e.clientY / innerHeight) - 0.5) * 12;
+=======
+      const x = ((e.clientX / innerWidth) - 0.5) * 14;
+      const y = ((e.clientY / innerHeight) - 0.5) * 14;
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
       setMousePos({ x, y });
     };
     window.addEventListener("mousemove", handleMouseMove);
@@ -26,6 +31,7 @@ export default function Design2Hero() {
   const containerEase = "easeOut";
 
   return (
+<<<<<<< HEAD
     <section className="relative min-h-[92vh] lg:min-h-[96vh] pt-28 sm:pt-32 pb-16 sm:pb-20 bg-[#FAF6EE] text-[#1C140E] flex items-center overflow-hidden border-b border-[#C8A45D]/30">
       
       {/* High-Clarity Background Photograph Overlay */}
@@ -48,10 +54,35 @@ export default function Design2Hero() {
 
       {/* Architectural Background Watermark */}
       <div className="absolute top-6 left-4 md:left-12 text-[130px] sm:text-[220px] md:text-[320px] font-serif font-bold text-[#1C140E]/[0.025] select-none pointer-events-none leading-none tracking-tight">
+=======
+    <section className="relative min-h-[92vh] lg:min-h-[96vh] pt-24 sm:pt-28 pb-16 bg-[#F7F1E6] text-[#241914] flex items-center overflow-hidden border-b border-[#B89042]/20">
+      
+      {/* Background Atmospheric Incense Glow & Texture */}
+      <div className="absolute top-0 right-0 w-full lg:w-3/5 h-full pointer-events-none opacity-20 overflow-hidden">
+        <Image
+          src="/images/design2/hero-incense-premium.jpg"
+          alt="Atmospheric Background Texture"
+          fill
+          priority
+          sizes="(max-width: 1024px) 100vw, 60vw"
+          className="object-cover object-center filter blur-[3px] scale-110"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#F7F1E6] via-[#F7F1E6]/85 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#F7F1E6] via-transparent to-[#F7F1E6]" />
+      </div>
+
+      {/* Luxury Golden Ambient Lights */}
+      <div className="absolute top-1/4 left-1/4 -translate-x-1/2 -translate-y-1/2 w-[550px] sm:w-[750px] h-[550px] sm:h-[750px] bg-[#B89042]/15 rounded-full blur-3xl pointer-events-none motion-safe:animate-pulse-glow" />
+      <div className="absolute bottom-5 right-12 w-[450px] h-[450px] bg-[#A95736]/10 rounded-full blur-3xl pointer-events-none" />
+
+      {/* Architectural Background Watermark */}
+      <div className="absolute top-4 left-4 md:left-12 text-[130px] sm:text-[220px] md:text-[280px] font-serif font-bold text-[#241914]/[0.035] select-none pointer-events-none leading-none tracking-tight">
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
         TIRTH
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
+<<<<<<< HEAD
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
           
           {/* Left Column: Premium Editorial Content */}
@@ -65,6 +96,21 @@ export default function Design2Hero() {
               className="inline-flex items-center gap-2.5 px-4 py-1.5 bg-[#FFFDF8] border border-[#C8A45D]/50 text-[#8C5D3B] text-[10px] sm:text-[11px] font-sans font-medium tracking-[0.3em] uppercase shadow-sm rounded-xs"
             >
               <Sparkles className="w-3.5 h-3.5 text-[#C8A45D] shrink-0" />
+=======
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+          
+          {/* Left Column: Premium Editorial Content */}
+          <div className="lg:col-span-6 space-y-6 sm:space-y-8">
+            
+            {/* 1. Gold Crest Header Badge */}
+            <motion.div
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1, ease: containerEase }}
+              className="inline-flex items-center gap-2.5 px-4 py-1.5 bg-[#FFFDF8] border border-[#B89042]/40 text-[#A95736] text-[10px] sm:text-[11px] font-semibold tracking-[0.25em] uppercase shadow-sm rounded-xs"
+            >
+              <Sparkles className="w-3.5 h-3.5 text-[#B89042] shrink-0" />
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
               <span>{BRAND_INFO.companyName} • Artisanal Sacred Incense</span>
             </motion.div>
 
@@ -72,6 +118,7 @@ export default function Design2Hero() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
+<<<<<<< HEAD
               transition={{ duration: 0.8, delay: 0.2, ease: containerEase }}
               className="space-y-1"
             >
@@ -83,30 +130,66 @@ export default function Design2Hero() {
                 <span className="font-serif italic text-[clamp(2.5rem,5.8vw,4.5rem)] text-[#C8A45D] font-light">TIRTH</span>{" "}
                 <span className="font-serif font-medium text-[clamp(2.5rem,5.8vw,4.5rem)] text-[#1C140E]">AGARBATTI</span>
               </h1>
+=======
+              transition={{ duration: 0.7, delay: 0.25, ease: containerEase }}
+              className="space-y-2"
+            >
+              <span className="block text-xs font-semibold tracking-[0.35em] uppercase text-[#B89042]">
+                PURE VEDIC BOTANICALS
+              </span>
+              <h1 className="font-serif text-[clamp(3.2rem,8vw,6rem)] font-normal leading-[0.9] tracking-tight text-[#241914]">
+                TIRTH
+              </h1>
+              <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
+                <span className="font-serif italic text-[clamp(1.9rem,4.4vw,3.6rem)] text-[#A95736] font-light">
+                  PREMIUM
+                </span>
+                <span className="font-serif text-[clamp(2.2rem,5vw,4.2rem)] text-[#241914] font-medium tracking-wide">
+                  AGARBATTI
+                </span>
+              </div>
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
             </motion.div>
 
             {/* Ornamental Metallic Gold Divider */}
             <motion.div
               initial={{ opacity: 0, scaleX: 0 }}
               animate={{ opacity: 1, scaleX: 1 }}
+<<<<<<< HEAD
               transition={{ duration: 0.7, delay: 0.35, ease: containerEase }}
               className="flex items-center gap-3 origin-left"
             >
               <div className="w-24 h-[1px] bg-gradient-to-r from-[#C8A45D] via-[#D9A52B] to-[#8C5D3B]" />
               <div className="w-1.5 h-1.5 rotate-45 border border-[#C8A45D] bg-[#FAF6EE]" />
               <div className="w-16 h-[1px] bg-[#C8A45D]/40" />
+=======
+              transition={{ duration: 0.6, delay: 0.35, ease: containerEase }}
+              className="flex items-center gap-3 origin-left"
+            >
+              <div className="w-24 h-[2px] bg-gradient-to-r from-[#B89042] via-[#D9A52B] to-[#A95736]" />
+              <div className="w-2 h-2 rotate-45 border border-[#B89042] bg-[#F7F1E6]" />
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
             </motion.div>
 
             {/* 3. Luxury Quote Box */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
+<<<<<<< HEAD
               transition={{ duration: 0.8, delay: 0.45, ease: containerEase }}
               className="space-y-3 max-w-lg"
             >
               <div className="flex gap-4 items-start">
                 <div className="w-1 self-stretch bg-gradient-to-b from-[#C8A45D] via-[#8C5D3B] to-[#C8A45D] shrink-0 rounded-full" />
                 <p className="text-base sm:text-lg text-[#1C140E]/90 font-serif leading-relaxed italic py-0.5">
+=======
+              transition={{ duration: 0.7, delay: 0.45, ease: containerEase }}
+              className="space-y-3 max-w-lg"
+            >
+              <div className="flex gap-4 items-start">
+                <div className="w-1 self-stretch bg-gradient-to-b from-[#B89042] via-[#A95736] to-[#B89042] shrink-0 rounded-full" />
+                <p className="text-base sm:text-lg text-[#241914]/90 font-serif leading-relaxed italic py-0.5">
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
                   Elevating divine rituals and quiet reflective moments with handcrafted Indian incense sticks, pure sandalwood, sweet mogra, and sacred sambrani resins.
                 </p>
               </div>
@@ -116,6 +199,7 @@ export default function Design2Hero() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
+<<<<<<< HEAD
               transition={{ duration: 0.8, delay: 0.55, ease: containerEase }}
               className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4"
             >
@@ -129,15 +213,33 @@ export default function Design2Hero() {
                   
                   <span className="relative z-10">EXPLORE COLLECTION</span>
                   <ArrowDownRight className="w-4 h-4 relative z-10 transition-transform duration-300 group-hover:translate-x-1 group-hover:translate-y-1 text-[#C8A45D]" />
+=======
+              transition={{ duration: 0.7, delay: 0.6, ease: containerEase }}
+              className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4"
+            >
+              <motion.div whileHover={{ y: -2, scale: 1.01 }} whileTap={{ scale: 0.98 }} transition={{ duration: 0.25 }}>
+                <Link
+                  href="/design-2/products"
+                  className="group inline-flex items-center justify-between gap-6 px-8 py-4 bg-[#241914] text-[#FFFDF8] text-xs font-semibold tracking-[0.22em] uppercase hover:bg-[#A95736] transition-all duration-300 shadow-xl border border-[#B89042]/30"
+                >
+                  <span>EXPLORE COLLECTION</span>
+                  <ArrowDownRight className="w-4 h-4 transition-transform group-hover:translate-x-1 group-hover:translate-y-1 text-[#D9A52B]" />
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
                 </Link>
               </motion.div>
 
               <motion.div whileHover={{ y: -2 }} whileTap={{ scale: 0.98 }} transition={{ duration: 0.25 }}>
                 <Link
                   href="/design-2/about"
+<<<<<<< HEAD
                   className="inline-flex items-center justify-center px-7 py-4 border border-[#C8A45D]/60 bg-transparent text-[#1C140E] text-xs font-sans font-medium tracking-[0.22em] uppercase hover:border-[#1C140E] hover:bg-[#FFFDF8] transition-all duration-300"
                 >
                   DISCOVER OUR STORY
+=======
+                  className="inline-flex items-center justify-center px-7 py-4 border border-[#B89042]/80 bg-[#FFFDF8]/90 text-[#241914] text-xs font-semibold tracking-[0.2em] uppercase hover:border-[#241914] hover:bg-[#FFFDF8] transition-all duration-300 shadow-sm"
+                >
+                  OUR HERITAGE
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
                 </Link>
               </motion.div>
             </motion.div>
@@ -146,6 +248,7 @@ export default function Design2Hero() {
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
+<<<<<<< HEAD
               transition={{ duration: 0.9, delay: 0.7, ease: containerEase }}
               className="pt-6 grid grid-cols-3 gap-3 sm:gap-4 border-t border-[#C8A45D]/25"
             >
@@ -171,6 +274,33 @@ export default function Design2Hero() {
                   <span className="font-serif text-sm sm:text-base font-bold text-[#8C5D3B]">Hand-Rolled</span>
                 </div>
                 <span className="text-[9px] sm:text-[10px] uppercase tracking-wider font-medium text-[#1C140E]/70 block font-sans">Artisanal Sticks</span>
+=======
+              transition={{ duration: 0.8, delay: 0.75, ease: containerEase }}
+              className="pt-6 grid grid-cols-3 gap-3 sm:gap-4 border-t border-[#B89042]/25"
+            >
+              <div className="p-3 bg-[#FFFDF8]/70 border border-[#B89042]/20 rounded-xs space-y-1 hover:border-[#B89042]/50 transition-colors">
+                <div className="flex items-center gap-1.5 text-[#A95736]">
+                  <Leaf className="w-3.5 h-3.5 text-[#B89042]" />
+                  <span className="font-serif text-sm sm:text-base font-bold text-[#A95736]">100% Pure</span>
+                </div>
+                <span className="text-[9px] sm:text-[10px] uppercase tracking-wider font-semibold text-[#241914]/70 block">Natural Botanicals</span>
+              </div>
+
+              <div className="p-3 bg-[#FFFDF8]/70 border border-[#B89042]/20 rounded-xs space-y-1 hover:border-[#B89042]/50 transition-colors">
+                <div className="flex items-center gap-1.5 text-[#A95736]">
+                  <Flame className="w-3.5 h-3.5 text-[#B89042]" />
+                  <span className="font-serif text-sm sm:text-base font-bold text-[#A95736]">Vedic Recipe</span>
+                </div>
+                <span className="text-[9px] sm:text-[10px] uppercase tracking-wider font-semibold text-[#241914]/70 block">Sacred Formulations</span>
+              </div>
+
+              <div className="p-3 bg-[#FFFDF8]/70 border border-[#B89042]/20 rounded-xs space-y-1 hover:border-[#B89042]/50 transition-colors">
+                <div className="flex items-center gap-1.5 text-[#A95736]">
+                  <ShieldCheck className="w-3.5 h-3.5 text-[#B89042]" />
+                  <span className="font-serif text-sm sm:text-base font-bold text-[#A95736]">Hand-Rolled</span>
+                </div>
+                <span className="text-[9px] sm:text-[10px] uppercase tracking-wider font-semibold text-[#241914]/70 block">Artisanal Sticks</span>
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
               </div>
             </motion.div>
 
@@ -186,7 +316,11 @@ export default function Design2Hero() {
               x: shouldReduceMotion ? 0 : mousePos.x,
             }}
             transition={{
+<<<<<<< HEAD
               duration: 0.95,
+=======
+              duration: 0.9,
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
               delay: 0.35,
               ease: containerEase,
               x: { duration: 0.4, ease: "easeOut" },
@@ -194,14 +328,20 @@ export default function Design2Hero() {
             className="lg:col-span-6 relative mt-6 lg:mt-0 space-y-4"
           >
             {/* Main Image Frame Container with Double Gold Hairline Border */}
+<<<<<<< HEAD
             <div className="relative p-2 sm:p-3 bg-[#FFFDF8] border-2 border-[#C8A45D]/50 rounded-xs shadow-2xl group">
               <div className="relative aspect-[4/3] sm:aspect-[16/11] lg:aspect-[4/3] w-full rounded-xs overflow-hidden border border-[#C8A45D]/30 bg-[#1C140E]">
+=======
+            <div className="relative p-2 sm:p-3 bg-[#FFFDF8] border-2 border-[#B89042]/50 rounded-xs shadow-2xl group">
+              <div className="relative aspect-[4/3] sm:aspect-[16/11] lg:aspect-[4/3] w-full rounded-xs overflow-hidden border border-[#B89042]/30 bg-[#241914]">
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
                 <Image
                   src="/images/design2/hero-incense-premium.jpg"
                   alt="Tirth Premium Agarbatti Incense Packaging Showcase"
                   fill
                   priority
                   sizes="(max-width: 1024px) 100vw, 50vw"
+<<<<<<< HEAD
                   className="object-cover object-center transform group-hover:scale-105 transition-transform duration-1000 ease-out"
                 /> 
 
@@ -212,6 +352,18 @@ export default function Design2Hero() {
                 <div className="absolute top-4 left-4 sm:top-5 sm:left-5">
                   <span className="px-3 py-1.5 bg-[#1C140E]/90 backdrop-blur-md text-[#FFFDF8] text-[9px] sm:text-[10px] font-sans font-medium tracking-[0.25em] uppercase border border-[#C8A45D]/40 shadow-sm inline-flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#C8A45D] animate-pulse" />
+=======
+                  className="object-cover object-center transform group-hover:scale-105 transition-transform duration-700 ease-out"
+                /> 
+
+                {/* Subtle Luxury Gradient Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-[#1D1512]/90 via-[#1D1512]/20 to-transparent opacity-85 group-hover:opacity-75 transition-opacity duration-500" />
+
+                {/* Top Left Badge */}
+                <div className="absolute top-4 left-4 sm:top-5 sm:left-5">
+                  <span className="px-3 py-1.5 bg-[#1D1512]/90 backdrop-blur-md text-[#FFFDF8] text-[9px] sm:text-[10px] font-semibold tracking-[0.25em] uppercase border border-[#B89042]/40 shadow-sm inline-flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#D9A52B] animate-pulse" />
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
                     Limited Botanical Batch
                   </span>
                 </div>
@@ -219,7 +371,11 @@ export default function Design2Hero() {
                 {/* Editorial Overlay Text */}
                 <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 flex justify-between items-end text-[#FFFDF8]">
                   <div className="space-y-1 max-w-[70%]">
+<<<<<<< HEAD
                     <span className="text-[10px] tracking-[0.25em] font-sans font-medium text-[#C8A45D] uppercase block">
+=======
+                    <span className="text-[10px] tracking-[0.25em] font-semibold text-[#D9A52B] uppercase block">
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
                       Signature Creation
                     </span>
                     <h3 className="font-serif text-xl sm:text-2xl font-normal text-[#FFFDF8] drop-shadow-sm leading-tight">
@@ -227,7 +383,11 @@ export default function Design2Hero() {
                     </h3>
                   </div>
                   <div className="text-right shrink-0">
+<<<<<<< HEAD
                     <span className="inline-block text-[9px] sm:text-[10px] tracking-[0.2em] font-sans font-medium text-[#FFFDF8] uppercase px-3 py-1 bg-[#8C5D3B] border border-[#C8A45D]/40 rounded-xs shadow-sm">
+=======
+                    <span className="inline-block text-[9px] sm:text-[10px] tracking-[0.2em] font-semibold text-[#FFFDF8] uppercase px-3 py-1 bg-[#A95736] border border-[#B89042]/40 rounded-xs shadow-sm">
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
                       Pure Flora Resin
                     </span>
                   </div>
@@ -239,6 +399,7 @@ export default function Design2Hero() {
             <motion.div
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
+<<<<<<< HEAD
               transition={{ duration: 0.8, delay: 0.6, ease: containerEase }}
               className="p-4 sm:p-5 bg-[#FFFDF8] border-2 border-[#C8A45D]/40 shadow-lg rounded-xs"
             >
@@ -263,6 +424,33 @@ export default function Design2Hero() {
                   <span className="text-[#8C5D3B] font-sans font-semibold text-[10px] uppercase tracking-wider block">Base Note:</span>
                   <span className="font-serif italic text-xs text-[#1C140E] font-medium block mt-0.5">Sacred Sambrani Resin</span>
                 </div>              </div>
+=======
+              transition={{ duration: 0.8, delay: 0.6 }}
+              className="p-4 sm:p-5 bg-[#FFFDF8] border-2 border-[#B89042]/40 shadow-lg rounded-xs"
+            >
+              <div className="flex items-center justify-between pb-2 mb-3 border-b border-[#B89042]/25">
+                <span className="text-[10px] font-bold tracking-[0.25em] uppercase text-[#A95736] flex items-center gap-2">
+                  <Sparkles className="w-3.5 h-3.5 text-[#B89042]" />
+                  Aroma Profile Pyramid
+                </span>
+                <span className="text-[10px] text-[#B89042] font-serif italic font-medium">100% Pure Essential Oils</span>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs text-[#241914]">
+                <div className="p-2 bg-[#F7F1E6]/60 border border-[#B89042]/20 rounded-xs">
+                  <span className="text-[#A95736] font-semibold text-[10px] uppercase tracking-wider block">Top Notes:</span>
+                  <span className="font-serif italic text-xs text-[#241914] font-medium block mt-0.5">Fresh Mogra & Jasmine</span>
+                </div>
+                <div className="p-2 bg-[#F7F1E6]/60 border border-[#B89042]/20 rounded-xs">
+                  <span className="text-[#A95736] font-semibold text-[10px] uppercase tracking-wider block">Heart Note:</span>
+                  <span className="font-serif italic text-xs text-[#241914] font-medium block mt-0.5">Mysore Sandalwood</span>
+                </div>
+                <div className="p-2 bg-[#F7F1E6]/60 border border-[#B89042]/20 rounded-xs">
+                  <span className="text-[#A95736] font-semibold text-[10px] uppercase tracking-wider block">Base Note:</span>
+                  <span className="font-serif italic text-xs text-[#241914] font-medium block mt-0.5">Sacred Sambrani Resin</span>
+                </div>
+              </div>
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
             </motion.div>
 
           </motion.div>

@@ -25,6 +25,7 @@ export default function Design2Footer() {
   };
 
   return (
+<<<<<<< HEAD
     <footer className="bg-[#140D08] text-[#F8F4EA] pt-16 pb-10 border-t border-[#C8A45D]/30 relative overflow-hidden font-sans">
       
       {/* Subtle Warm Atmospheric Lighting */}
@@ -33,6 +34,16 @@ export default function Design2Footer() {
       
       {/* Background Watermark */}
       <div className="absolute top-12 left-1/2 -translate-x-1/2 text-[120px] sm:text-[180px] font-serif font-bold text-[#F8F4EA]/[0.015] select-none pointer-events-none tracking-widest leading-none">
+=======
+    <footer className="bg-[#1A120C] text-[#F7F1E6] pt-16 pb-10 border-t border-[#D9A52B]/30 relative overflow-hidden font-sans">
+      
+      {/* Subtle Warm Atmospheric Lighting (No glaring graphics) */}
+      <div className="absolute top-0 right-1/4 w-[450px] h-[300px] bg-[#D9A52B]/[0.03] rounded-full blur-[100px] pointer-events-none" />
+      <div className="absolute bottom-0 left-10 w-[350px] h-[250px] bg-[#A95736]/[0.03] rounded-full blur-[90px] pointer-events-none" />
+      
+      {/* Barely visible background watermark behind content */}
+      <div className="absolute top-12 left-1/2 -translate-x-1/2 text-[120px] sm:text-[180px] font-serif font-bold text-[#F7F1E6]/[0.012] select-none pointer-events-none tracking-widest leading-none">
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
         TIRTH
       </div>
 
@@ -42,10 +53,17 @@ export default function Design2Footer() {
         <ScrollReveal direction="up" distance={20} delay={0.1}>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-12 pb-14">
             
+<<<<<<< HEAD
             {/* Left / Brand Section */}
             <div className="lg:col-span-4 space-y-6">
               <div className="flex items-center gap-4">
                 <div className="relative w-12 h-12 rounded-full overflow-hidden shrink-0 border border-[#C8A45D]/40 bg-[#FFFDF8] p-1 shadow-md">
+=======
+            {/* Left / Brand Section (Span 4) */}
+            <div className="lg:col-span-4 space-y-6">
+              <div className="flex items-center gap-4">
+                <div className="relative w-12 h-12 rounded-full overflow-hidden shrink-0 border border-[#D9A52B]/40 bg-[#FFFDF8] p-1 shadow-md">
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
                   <Image
                     src="/images/logo/tirth-logo-transparent.png"
                     alt="Tirth Premium Agarbatti Logo"
@@ -55,20 +73,35 @@ export default function Design2Footer() {
                   />
                 </div>
                 <div>
+<<<<<<< HEAD
                   <h3 className="font-serif text-xl sm:text-2xl font-semibold tracking-wide text-[#F8F4EA] leading-tight">
                     TIRTH <span className="italic text-[#C8A45D] font-normal">PREMIUM AGARBATTI</span>
                   </h3>
                   <p className="text-[11px] uppercase tracking-[0.25em] text-[#C8A45D]/90 font-medium pt-0.5">
+=======
+                  <h3 className="font-serif text-xl sm:text-2xl font-semibold tracking-wide text-[#F7F1E6] leading-tight">
+                    TIRTH <span className="italic text-[#D9A52B] font-normal">PREMIUM AGARBATTI</span>
+                  </h3>
+                  <p className="text-[11px] uppercase tracking-[0.25em] text-[#D9A52B]/80 font-medium pt-0.5">
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
                     {BRAND_INFO.companyName}
                   </p>
                 </div>
               </div>
 
+<<<<<<< HEAD
               <p className="text-sm text-[#E8DDC8]/85 leading-relaxed font-light max-w-sm">
                 Elevating sacred rituals and ambient spaces with handcrafted Indian incense sticks, pure natural sandalwood, sweet mogra, and traditional sambrani dhoop.
               </p>
 
               {/* Social Icons */}
+=======
+              <p className="text-sm text-[#DDD0BB]/85 leading-relaxed font-light max-w-sm">
+                Elevating sacred rituals and ambient spaces with handcrafted Indian incense sticks, pure natural sandalwood, sweet mogra, and traditional sambrani dhoop.
+              </p>
+
+              {/* Social Icons - Small, elegant circular outlined */}
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
               <div className="flex items-center gap-3 pt-1">
                 <motion.a
                   whileHover={{ y: -2, scale: 1.05 }}
@@ -77,7 +110,11 @@ export default function Design2Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Facebook Page"
+<<<<<<< HEAD
                   className="w-9 h-9 rounded-full bg-[#1C140E] border border-[#C8A45D]/30 text-[#E8DDC8] hover:text-[#C8A45D] hover:border-[#C8A45D] flex items-center justify-center transition-colors shadow-sm"
+=======
+                  className="w-9 h-9 rounded-full bg-[#241914] border border-[#D9A52B]/30 text-[#DDD0BB] hover:text-[#D9A52B] hover:border-[#D9A52B] flex items-center justify-center transition-colors shadow-sm"
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
                 >
                   <FacebookIcon className="w-4 h-4" />
                 </motion.a>
@@ -88,19 +125,32 @@ export default function Design2Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="WhatsApp Contact"
+<<<<<<< HEAD
                   className="w-9 h-9 rounded-full bg-[#1C140E] border border-[#C8A45D]/30 text-[#E8DDC8] hover:text-[#25D366] hover:border-[#25D366]/60 flex items-center justify-center transition-colors shadow-sm"
+=======
+                  className="w-9 h-9 rounded-full bg-[#241914] border border-[#D9A52B]/30 text-[#DDD0BB] hover:text-[#25D366] hover:border-[#25D366]/60 flex items-center justify-center transition-colors shadow-sm"
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
                 >
                   <WhatsAppIcon className="w-4 h-4" />
                 </motion.a>
               </div>
             </div>
 
+<<<<<<< HEAD
             {/* Middle Col 1: Navigation */}
             <div className="lg:col-span-2 space-y-4">
               <h4 className="font-serif text-sm font-bold tracking-[0.18em] uppercase text-[#C8A45D] border-b border-[#C8A45D]/25 pb-2 inline-block">
                 Navigation
               </h4>
               <ul className="space-y-2.5 text-sm font-light text-[#E8DDC8]">
+=======
+            {/* Middle Col 1: Navigation (Span 2) */}
+            <div className="lg:col-span-2 space-y-4">
+              <h4 className="font-serif text-sm font-bold tracking-[0.18em] uppercase text-[#D9A52B] border-b border-[#D9A52B]/20 pb-2 inline-block">
+                Navigation
+              </h4>
+              <ul className="space-y-2.5 text-sm font-light text-[#DDD0BB]">
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
                 {[
                   { label: "Home", href: "/design-2" },
                   { label: "About", href: "/design-2/about" },
@@ -111,22 +161,38 @@ export default function Design2Footer() {
                   <li key={item.label}>
                     <Link
                       href={item.href}
+<<<<<<< HEAD
                       className="hover:text-[#C8A45D] transition-colors inline-flex items-center gap-1.5 group"
                     >
                       <span>{item.label}</span>
                       <ArrowUpRight className="w-3.5 h-3.5 opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all text-[#C8A45D]" />
+=======
+                      className="hover:text-[#D9A52B] transition-colors inline-flex items-center gap-1.5 group"
+                    >
+                      <span>{item.label}</span>
+                      <ArrowUpRight className="w-3.5 h-3.5 opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all text-[#D9A52B]" />
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
                     </Link>
                   </li>
                 ))}
               </ul>
             </div>
 
+<<<<<<< HEAD
             {/* Middle Col 2: Business */}
             <div className="lg:col-span-3 space-y-4">
               <h4 className="font-serif text-sm font-bold tracking-[0.18em] uppercase text-[#C8A45D] border-b border-[#C8A45D]/25 pb-2 inline-block">
                 Business
               </h4>
               <ul className="space-y-2.5 text-sm font-light text-[#E8DDC8]">
+=======
+            {/* Middle Col 2: Business (Span 3) */}
+            <div className="lg:col-span-3 space-y-4">
+              <h4 className="font-serif text-sm font-bold tracking-[0.18em] uppercase text-[#D9A52B] border-b border-[#D9A52B]/20 pb-2 inline-block">
+                Business
+              </h4>
+              <ul className="space-y-2.5 text-sm font-light text-[#DDD0BB]">
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
                 {[
                   { label: "Become a Distributor", href: "/design-2/distributor" },
                   { label: "Wholesale Enquiry", href: "/design-2/contact" },
@@ -135,16 +201,24 @@ export default function Design2Footer() {
                   <li key={item.label}>
                     <Link
                       href={item.href}
+<<<<<<< HEAD
                       className="hover:text-[#C8A45D] transition-colors inline-flex items-center gap-1.5 group"
                     >
                       <span>{item.label}</span>
                       <ArrowUpRight className="w-3.5 h-3.5 opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all text-[#C8A45D]" />
+=======
+                      className="hover:text-[#D9A52B] transition-colors inline-flex items-center gap-1.5 group"
+                    >
+                      <span>{item.label}</span>
+                      <ArrowUpRight className="w-3.5 h-3.5 opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all text-[#D9A52B]" />
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
                     </Link>
                   </li>
                 ))}
               </ul>
             </div>
 
+<<<<<<< HEAD
             {/* Right Col: Connect With Us */}
             <div className="lg:col-span-3 space-y-4">
               <h4 className="font-serif text-sm font-bold tracking-[0.18em] uppercase text-[#C8A45D] border-b border-[#C8A45D]/25 pb-2 inline-block">
@@ -158,12 +232,32 @@ export default function Design2Footer() {
                 <li className="flex items-center gap-3">
                   <Phone className="w-4 h-4 text-[#C8A45D] shrink-0" />
                   <a href={`tel:${BRAND_INFO.phone}`} className="hover:text-[#C8A45D] transition-colors">
+=======
+            {/* Right Col: Connect With Us (Span 3) */}
+            <div className="lg:col-span-3 space-y-4">
+              <h4 className="font-serif text-sm font-bold tracking-[0.18em] uppercase text-[#D9A52B] border-b border-[#D9A52B]/20 pb-2 inline-block">
+                Connect With Us
+              </h4>
+              <ul className="space-y-3 text-sm font-light text-[#DDD0BB]">
+                <li className="flex items-start gap-3">
+                  <MapPin className="w-4 h-4 text-[#D9A52B] shrink-0 mt-0.5" />
+                  <span>{BRAND_INFO.location}</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <Phone className="w-4 h-4 text-[#D9A52B] shrink-0" />
+                  <a href={`tel:${BRAND_INFO.phone}`} className="hover:text-[#D9A52B] transition-colors">
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
                     {BRAND_INFO.phone}
                   </a>
                 </li>
                 <li className="flex items-center gap-3">
+<<<<<<< HEAD
                   <Mail className="w-4 h-4 text-[#C8A45D] shrink-0" />
                   <a href={`mailto:${BRAND_INFO.email}`} className="hover:text-[#C8A45D] transition-colors">
+=======
+                  <Mail className="w-4 h-4 text-[#D9A52B] shrink-0" />
+                  <a href={`mailto:${BRAND_INFO.email}`} className="hover:text-[#D9A52B] transition-colors">
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
                     {BRAND_INFO.email}
                   </a>
                 </li>
@@ -174,6 +268,7 @@ export default function Design2Footer() {
         </ScrollReveal>
 
         {/* Thin Champagne-Gold Horizontal Divider */}
+<<<<<<< HEAD
         <div className="w-full h-px bg-gradient-to-r from-transparent via-[#C8A45D]/40 to-transparent my-2" />
 
         {/* Bottom Copyright & Legal Links */}
@@ -185,12 +280,29 @@ export default function Design2Footer() {
               Privacy Policy
             </Link>
             <Link href="/terms" className="hover:text-[#C8A45D] transition-colors">
+=======
+        <div className="w-full h-px bg-gradient-to-r from-transparent via-[#D9A52B]/40 to-transparent my-2" />
+
+        {/* Bottom Copyright & Legal Links */}
+        <div className="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-[#DDD0BB]/70 gap-4 font-light">
+          <p>© {new Date().getFullYear()} {BRAND_INFO.companyName}. Brand: {BRAND_INFO.brandName}. All rights reserved.</p>
+          
+          <div className="flex items-center gap-6">
+            <Link href="/privacy-policy" className="hover:text-[#D9A52B] transition-colors">
+              Privacy Policy
+            </Link>
+            <Link href="/terms" className="hover:text-[#D9A52B] transition-colors">
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
               Terms & Conditions
             </Link>
             <button
               onClick={scrollToTop}
               aria-label="Scroll back to top"
+<<<<<<< HEAD
               className="inline-flex items-center gap-1.5 px-3 py-1 bg-[#1C140E] border border-[#C8A45D]/30 text-[#C8A45D] hover:text-[#FFFDF8] hover:border-[#C8A45D] transition-all rounded-xs text-[11px]"
+=======
+              className="inline-flex items-center gap-1.5 px-3 py-1 bg-[#241914] border border-[#D9A52B]/30 text-[#D9A52B] hover:text-[#FFFDF8] hover:border-[#D9A52B] transition-all rounded-xs text-[11px]"
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
             >
               <span>TOP</span>
               <ArrowUp className="w-3 h-3" />
