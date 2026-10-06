@@ -1,6 +1,9 @@
 import Design3Hero from "@/components/design3/Design3Hero";
 import Design3BrandStory from "@/components/design3/Design3BrandStory";
+<<<<<<< HEAD
 import Design3Craftsmanship from "@/components/design3/Design3Craftsmanship";
+=======
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
 import Design3Products from "@/components/design3/Design3Products";
 import Design3FragranceExperience from "@/components/design3/Design3FragranceExperience";
 import Design3WhyTirth from "@/components/design3/Design3WhyTirth";
@@ -11,6 +14,7 @@ import Design3CTA from "@/components/design3/Design3CTA";
 export default function Design3HomePage() {
   return (
     <>
+<<<<<<< HEAD
       {/* 1. HERO SECTION (Dark Navy Cinematic Advert) */}
       <Design3Hero />
 
@@ -36,6 +40,15 @@ export default function Design3HomePage() {
       <Design3Gallery limit={3} />
 
       {/* 9. PREMIUM CTA (Dark Navy Cinematic Final Action) */}
+=======
+      <Design3Hero />
+      <Design3BrandStory />
+      <Design3Products />
+      <Design3FragranceExperience />
+      <Design3WhyTirth />
+      <Design3Heritage />
+      <Design3Gallery limit={5} />
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
       <Design3CTA />
     </>
   );
