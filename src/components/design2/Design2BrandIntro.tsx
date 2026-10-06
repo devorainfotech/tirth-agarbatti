@@ -2,12 +2,18 @@
 
 import Image from "next/image";
 import Link from "next/link";
+<<<<<<< HEAD
 import { ArrowRight, Sparkles, Flame, ShieldCheck, Award } from "lucide-react";
+=======
+import { ArrowRight, Sparkles, CheckCircle2 } from "lucide-react";
+import { motion } from "framer-motion";
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
 import { BRAND_INFO } from "@/data/navigation";
 import ScrollReveal from "./ScrollReveal";
 
 export default function Design2BrandIntro() {
   return (
+<<<<<<< HEAD
     <section className="py-24 sm:py-32 bg-[#FFFDF8] text-[#1C140E] relative overflow-hidden border-b border-[#C8A45D]/20">
       
       {/* Background Atmosphere & Decorative Lighting */}
@@ -17,10 +23,17 @@ export default function Design2BrandIntro() {
       {/* Decorative Corner Watermark Lines */}
       <div className="absolute top-8 left-8 w-24 h-24 border-t border-l border-[#C8A45D]/20 pointer-events-none hidden md:block" />
       <div className="absolute bottom-8 right-8 w-24 h-24 border-b border-r border-[#C8A45D]/20 pointer-events-none hidden md:block" />
+=======
+    <section className="py-20 sm:py-28 bg-[#FFFDF8] text-[#241914] relative overflow-hidden border-b border-[#B89042]/20">
+      
+      {/* Background Soft Lighting Accent */}
+      <div className="absolute top-1/2 -left-20 -translate-y-1/2 w-96 h-96 bg-[#B89042]/10 rounded-full blur-3xl pointer-events-none" />
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
+<<<<<<< HEAD
           {/* Left Column: Cinematic Luxury Image Frame */}
           <div className="lg:col-span-6 relative">
             <ScrollReveal direction="up" distance={30} duration={0.9}>
@@ -34,12 +47,22 @@ export default function Design2BrandIntro() {
 
                 {/* Inner Double Frame */}
                 <div className="relative aspect-[4/5] sm:aspect-[16/11] lg:aspect-[4/5] w-full bg-[#1C140E] overflow-hidden border border-[#C8A45D]/25">
+=======
+          {/* Left Column: Cinematic Image Showcase */}
+          <div className="lg:col-span-6 relative">
+            <ScrollReveal direction="up" distance={25} duration={0.9}>
+              <div className="relative aspect-[4/5] sm:aspect-[16/11] lg:aspect-[4/5] w-full bg-[#F7F1E6] p-3 sm:p-4 border-2 border-[#B89042]/40 shadow-2xl group rounded-xs">
+                
+                {/* Main Image Container */}
+                <div className="relative w-full h-full overflow-hidden bg-[#241914] rounded-xs">
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
                   <Image
                     src="/images/design2/brand-craftsmanship.jpg"
                     alt="Artisanal Agarbatti Craftsmanship by Milliard Agarbatti"
                     fill
                     priority
                     sizes="(max-width: 1024px) 100vw, 50vw"
+<<<<<<< HEAD
                     className="object-cover object-center transition-all duration-1000 ease-out group-hover:scale-105 group-hover:brightness-[1.03]"
                   />
                   {/* Subtle Luxury Gradient Overlay */}
@@ -55,13 +78,28 @@ export default function Design2BrandIntro() {
                 {/* Overlapping Vertical Accent Badge */}
                 <div className="hidden sm:flex absolute -left-6 top-1/2 -translate-y-1/2 rotate-[-90deg] origin-center text-[10px] font-sans font-semibold tracking-[0.3em] uppercase text-[#8C5D3B] bg-[#FFFDF8] px-5 py-2 border border-[#C8A45D]/50 shadow-xl whitespace-nowrap items-center gap-2.5 z-20 backdrop-blur-md">
                   <Sparkles className="w-3.5 h-3.5 text-[#C8A45D]" />
+=======
+                    className="object-cover object-center transition-transform duration-1000 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#241914]/60 via-transparent to-transparent opacity-60" />
+                </div>
+
+                {/* Overlapping Vertical Accent Label */}
+                <div className="hidden sm:flex absolute -left-5 top-1/2 -translate-y-1/2 rotate-[-90deg] origin-center text-[10px] font-semibold tracking-[0.3em] uppercase text-[#A95736] bg-[#FFFDF8] px-4 py-1.5 border border-[#B89042]/40 shadow-md whitespace-nowrap items-center gap-2 z-20">
+                  <Sparkles className="w-3 h-3 text-[#B89042]" />
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
                   <span>{BRAND_INFO.companyName} • Artisanal Heritage</span>
                 </div>
 
                 {/* Bottom Overlay Badge */}
+<<<<<<< HEAD
                 <div className="absolute bottom-6 right-6 sm:bottom-8 sm:right-8 bg-[#1C140E]/90 backdrop-blur-md border border-[#C8A45D]/50 text-[#FFFDF8] px-5 py-2.5 text-xs sm:text-sm font-serif italic shadow-2xl z-20 flex items-center gap-2.5">
                   <Flame className="w-3.5 h-3.5 text-[#C8A45D]" />
                   <span>Handcrafted with Pure Vedic Oils</span>
+=======
+                <div className="absolute bottom-6 right-6 sm:bottom-8 sm:right-8 bg-[#241914]/90 backdrop-blur-md border border-[#B89042]/50 text-[#FFFDF8] px-4 py-2 text-xs font-serif italic shadow-lg z-20">
+                  Handcrafted with Pure Vedic Oils
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
                 </div>
 
               </div>
@@ -69,6 +107,7 @@ export default function Design2BrandIntro() {
           </div>
 
           {/* Right Column: Editorial Hierarchy & Value Points */}
+<<<<<<< HEAD
           <div className="lg:col-span-6 space-y-7 sm:space-y-8">
             
             {/* Header Tag & Title */}
@@ -94,11 +133,31 @@ export default function Design2BrandIntro() {
                 <div className="w-16 h-[1px] bg-gradient-to-r from-[#C8A45D] to-[#8C5D3B]" />
                 <div className="w-2 h-2 rotate-45 border border-[#C8A45D] bg-[#C8A45D]" />
                 <div className="w-8 h-[1px] bg-[#C8A45D]/30" />
+=======
+          <div className="lg:col-span-6 space-y-6 sm:space-y-7">
+            
+            {/* Header Tag & Title */}
+            <ScrollReveal direction="up" distance={20} delay={0.15}>
+              <div className="space-y-2">
+                <span className="text-xs font-semibold tracking-[0.3em] text-[#A95736] uppercase block">
+                  CRAFTED WITH SACRED DEVOTION
+                </span>
+                <h2 className="font-serif text-3xl sm:text-5xl font-normal text-[#241914] leading-[1.1]">
+                  THE TIRTH <span className="italic text-[#B89042]">EXPERIENCE</span>
+                </h2>
+              </div>
+              
+              {/* Small Gold Decorative Divider */}
+              <div className="flex items-center gap-3 mt-4">
+                <div className="w-16 h-[2px] bg-gradient-to-r from-[#B89042] to-[#A95736]" />
+                <div className="w-1.5 h-1.5 rotate-45 border border-[#B89042] bg-[#FFFDF8]" />
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
               </div>
             </ScrollReveal>
 
             {/* Quote Block */}
             <ScrollReveal direction="up" distance={20} delay={0.25}>
+<<<<<<< HEAD
               <div className="relative bg-[#FAF6EE] p-5 sm:p-6 border-l-2 border-[#C8A45D] border-y border-r border-[#C8A45D]/20 shadow-sm">
                 <span className="absolute top-2 right-4 text-4xl font-serif text-[#C8A45D]/20 select-none">
                   &ldquo;
@@ -107,15 +166,25 @@ export default function Design2BrandIntro() {
                   &ldquo;{BRAND_INFO.brandName} is created to transform your ambient space into a sanctuary of purity, tranquility, and divine reverie.&rdquo;
                 </p>
               </div>
+=======
+              <p className="font-serif text-lg sm:text-xl text-[#241914] italic leading-relaxed border-l-2 border-[#B89042] pl-4 py-0.5">
+                &ldquo;{BRAND_INFO.brandName} is created to transform your ambient space into a sanctuary of purity, tranquility, and divine reverie.&rdquo;
+              </p>
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
             </ScrollReveal>
 
             {/* Main Body Description */}
             <ScrollReveal direction="up" distance={20} delay={0.35}>
+<<<<<<< HEAD
               <p className="text-sm sm:text-base text-[#1C140E]/85 leading-relaxed font-sans font-normal">
+=======
+              <p className="text-sm sm:text-base text-[#241914]/85 leading-relaxed font-sans font-normal">
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
                 At Milliard Agarbatti, we carefully select aromatic resins, pure sandalwood chips, floral oils, and botanical gums to formulate every single incense stick. Our flagship brand, Tirth Premium Agarbatti, represents an uncompromising commitment to authentic Indian olfactory traditions.
               </p>
             </ScrollReveal>
 
+<<<<<<< HEAD
             {/* Elegant 4-Item Feature Scannable Grid */}
             <ScrollReveal direction="up" distance={20} delay={0.45}>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-2">
@@ -166,11 +235,32 @@ export default function Design2BrandIntro() {
                   <p className="text-xs text-[#1C140E]/75 leading-relaxed font-sans pl-6">
                     Formulated to purify ambient space for daily worship & meditation.
                   </p>
+=======
+            {/* Elegant Value Points Grid */}
+            <ScrollReveal direction="up" distance={20} delay={0.45}>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 border-t border-[#B89042]/20">
+                
+                <div className="p-3.5 bg-[#F7F1E6]/60 border border-[#B89042]/25 rounded-xs space-y-1">
+                  <div className="flex items-center gap-2 text-[#A95736]">
+                    <CheckCircle2 className="w-4 h-4 text-[#B89042]" />
+                    <h4 className="font-serif text-sm sm:text-base font-bold text-[#241914]">Pure Chandan Oil</h4>
+                  </div>
+                  <p className="text-xs text-[#241914]/75 leading-normal">Authentic sandalwood fragrance for meditation and daily worship.</p>
+                </div>
+
+                <div className="p-3.5 bg-[#F7F1E6]/60 border border-[#B89042]/25 rounded-xs space-y-1">
+                  <div className="flex items-center gap-2 text-[#A95736]">
+                    <CheckCircle2 className="w-4 h-4 text-[#B89042]" />
+                    <h4 className="font-serif text-sm sm:text-base font-bold text-[#241914]">Natural Sambrani Resin</h4>
+                  </div>
+                  <p className="text-xs text-[#241914]/75 leading-normal">Dense aromatic smoke formulated to purify atmospheric energy.</p>
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
                 </div>
 
               </div>
             </ScrollReveal>
 
+<<<<<<< HEAD
             {/* CTA Link Button */}
             <ScrollReveal direction="up" distance={20} delay={0.55}>
               <div className="pt-3">
@@ -183,6 +273,17 @@ export default function Design2BrandIntro() {
                   
                   <span className="relative z-10">DISCOVER OUR HERITAGE</span>
                   <ArrowRight className="w-4 h-4 text-[#C8A45D] relative z-10 transition-transform duration-300 group-hover:translate-x-1.5" />
+=======
+            {/* CTA Link */}
+            <ScrollReveal direction="up" distance={20} delay={0.55}>
+              <div className="pt-2">
+                <Link
+                  href="/design-2/about"
+                  className="group inline-flex items-center gap-3 px-6 py-3 bg-[#241914] text-[#FFFDF8] text-xs font-semibold tracking-[0.2em] uppercase hover:bg-[#A95736] transition-all duration-300 shadow-md"
+                >
+                  <span>DISCOVER OUR HERITAGE</span>
+                  <ArrowRight className="w-4 h-4 text-[#D9A52B] transition-transform group-hover:translate-x-1" />
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
                 </Link>
               </div>
             </ScrollReveal>
@@ -194,4 +295,7 @@ export default function Design2BrandIntro() {
     </section>
   );
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef

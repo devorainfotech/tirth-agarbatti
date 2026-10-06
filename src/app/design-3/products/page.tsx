@@ -3,7 +3,10 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+<<<<<<< HEAD
 import { motion } from "framer-motion";
+=======
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
 import { ArrowUpRight, Sparkles } from "lucide-react";
 import { PRODUCTS, PRODUCT_CATEGORIES } from "@/data/products";
 import { BRAND_INFO } from "@/data/navigation";
@@ -19,6 +22,7 @@ export default function Design3ProductsPage() {
   return (
     <div className="bg-[#F7F2E8]">
       
+<<<<<<< HEAD
       {/* Editorial Page Hero - Matching Design 3 Hero Aesthetics */}
       <section className="relative min-h-[70vh] flex items-center justify-center bg-[#0D1629] overflow-hidden pt-32 pb-20 sm:pb-28 border-b border-[#C9A45C]/30">
         {/* Background Cinematic Photograph with High Clarity */}
@@ -104,6 +108,41 @@ export default function Design3ProductsPage() {
               </button>
             ))}
           </motion.div>
+=======
+      {/* Editorial Page Header */}
+      <section className="bg-[#10182B] text-[#F7F2E8] pt-32 pb-20 sm:pb-24 border-b border-[#C9A45C]/30 relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-8">
+            <div>
+              <span className="text-xs font-semibold tracking-[0.3em] uppercase text-[#C9A45C] block">
+                ROYAL CATALOGUE — {BRAND_INFO.companyName}
+              </span>
+              <h1 className="font-serif text-4xl sm:text-7xl font-normal text-[#F7F2E8] mt-2 leading-[1.05]">
+                TIRTH <span className="italic text-[#C9A45C]">COLLECTION</span>
+              </h1>
+              <p className="font-serif text-base sm:text-xl italic text-[#E8DDC8]/90 mt-3 max-w-xl border-l-2 border-[#C9A45C] pl-4">
+                Explore handcrafted agarbatti, premium sandalwood sticks, floral mogra, and sacred sambrani dhoop cups.
+              </p>
+            </div>
+
+            {/* Category Filter Tabs */}
+            <div className="flex flex-wrap gap-2.5">
+              {PRODUCT_CATEGORIES.map((cat) => (
+                <button
+                  key={cat}
+                  onClick={() => setSelectedCategory(cat)}
+                  className={`px-4 py-2 text-xs font-semibold tracking-[0.18em] uppercase transition-all duration-300 shadow-sm ${
+                    selectedCategory === cat
+                      ? "bg-[#C9A45C] text-[#10182B] border-2 border-[#C9A45C]"
+                      : "bg-[#182B52] text-[#F7F2E8] border border-[#C9A45C]/30 hover:border-[#C9A45C]"
+                  }`}
+                >
+                  {cat}
+                </button>
+              ))}
+            </div>
+          </div>
+>>>>>>> 3213276f7823ce84bb20ede18b69aff031f10fef
         </div>
       </section>
 
